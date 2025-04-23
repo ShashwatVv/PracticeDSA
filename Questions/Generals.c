@@ -1,3 +1,15 @@
+/*
+digits = 0
+reverse_sum = 0
+n = x
+while(n>0){
+    int remain = n%10;
+    reverse_sum = 10*reverse_sum+remain;
+    n = n/10;
+}
+if reverse_sum == x: return false, else return true
+*/
+
 bool isPalindrome(int x) {
     if (x<0) return false;
     int n = x;
@@ -15,15 +27,3 @@ bool isPalindrome(int x) {
     else return false;
     
 }
-
-/*
-digits = 0
-reverse_sum = 0
-n = x
-while(n>0){
-    int remain = n%10;
-    reverse_sum = 10*reverse_sum+remain;
-    n = n/10;
-}
-if reverse_sum == x: return false, else return true
-*/
